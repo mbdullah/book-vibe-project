@@ -1,6 +1,8 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { setStorage } from '../../Utility/UtilityDB';
+import Swal from 'sweetalert2';
+
 
 const BookDetails = () => {
     const {id} = useParams();
@@ -12,6 +14,12 @@ const BookDetails = () => {
     const {image, author, bookName, tags, rating,  category, review, publisher, yearOfPublishing, totalPages} = singleBook
 
     const handleAddToMarkAsRead = id =>{
+        Swal.fire({
+            title: 'Success!',
+            text: 'Your Marks As Read successful.',
+            icon: 'success',
+            confirmButtonText: 'Cool'
+          });
         setStorage(id)
     }
 

@@ -3,11 +3,11 @@ import { CiStar } from "react-icons/ci";
 import { Link } from 'react-router';
 
 const Book = ({book}) => {
-    const {bookId, image, author, bookName, tags, rating,  category, review, publisher, yearOfPublishing, totalPages} = book;
+    const {bookId, image, author, bookName, tags, rating,  category, review, publisher, yearOfPublishing} = book;
     return (
        <div className='p-6 border-2 border-base-300 rounded-2xl'>
         <div className='bg-[#F3F3F3] flex rounded-2xl'>
-            <img className='h-[166px] w-[130px] mx-auto my-8' src={image} alt="" />
+            <img className='h-[166px] w-[130px] object-cover mx-auto my-8' src={image} alt="" />
         </div>
         <div>
             <button className='work-sans mr-3 bg-[#90bd8918] py-[7px] px-[16px] text-[16px] mt-6 text-[#23BE0A] rounded-full '>{tags[0]}</button>

@@ -16,7 +16,7 @@ const Navbar = () => {
         <NavLink to="/" className="mx-4 px-5 py-4 text-lg text-[#131313] opacity-80">Home</NavLink>
 <NavLink to="/about" className="mx-4 px-5 py-4 text-lg text-[#131313] opacity-80">About</NavLink>
 <NavLink to="/listedBook" className="mx-4 px-5 py-4 text-lg text-[#131313] opacity-80">Listed Books</NavLink>
-<NavLink to="" className="mx-4 px-5 py-4 text-lg text-[#131313] opacity-80">Page to Read</NavLink>
+<NavLink to="/pageToRead" className="mx-4 px-5 py-4 text-lg text-[#131313] opacity-80">Page to Read</NavLink>
       </ul>
     </div>
     <a className="text-2xl font-bold text-[#131313]">Book Vibe</a>
@@ -26,7 +26,7 @@ const Navbar = () => {
     <NavLink to="/" className="mx-4 px-5 py-4 text-lg text-[#131313] opacity-80">Home</NavLink>
 <NavLink to="/about" className="mx-4 px-5 py-4 text-lg text-[#131313] opacity-80">About</NavLink>
 <NavLink to="/listedBook" className="mx-4 px-5 py-4 text-lg text-[#131313] opacity-80">Listed Books</NavLink>
-<NavLink to="" className="mx-4 px-5 py-4 text-lg text-[#131313] opacity-80">Page to Read</NavLink>
+<NavLink to="/pageToRead" className="mx-4 px-5 py-4 text-lg text-[#131313] opacity-80">Page to Read</NavLink>
     </ul>
   </div>
   <div className="navbar-end">
