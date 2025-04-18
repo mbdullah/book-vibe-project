@@ -10,11 +10,11 @@ const BookDetails = () => {
 
     const {image, author, bookName, tags, rating,  category, review, publisher, yearOfPublishing, totalPages} = singleBook
     return (
-        <div className='flex gap-12 mb-[100px] mt-[50px]'>
-            <div className='bg-[#F3F3F3] p-[74px] w-[50%] rounded-3xl'>
-                <img className='w-[425px] h-[565px]' src={image} alt="" />
+        <div className='lg:flex gap-12 mb-[100px] mt-[50px] mx-5'>
+            <div className='bg-[#F3F3F3] p-[74px] lg:w-[50%] rounded-3xl'>
+                <img className='lg:w-[425px] lg:h-[565px] md:w-[350] md:h-[440]' src={image} alt="" />
             </div>
-            <div className='w-[50%]'>
+            <div className='lg:w-[50%]'>
                 <h2 className='font-bold text-[40px]'>{bookName}</h2>
                 <p className='font-medium text-xl mt-4  work-sans'>By : {author}</p>
                 <div className="divider"></div>
@@ -38,9 +38,9 @@ const BookDetails = () => {
                     <li>{rating}</li>
                 </ul>
                 </div>
-                <div className='flex mt-8'>
-                <button className=" text-white text-lg font-semibold bg-[#23BE0A] py-[14px] px-7 rounded-lg mr-4">Read</button>
-                <button className="hidden md:block text-white text-lg font-semibold bg-[#59C6D2] py-[14px] px-7 rounded-lg">Wishlist</button>
+                <div className='flex mt-8 work-sans'>
+                <button className="border-2 border-gray-300 hover:border-none hover:text-white text-lg font-semibold hover:bg-[#23BE0A] py-[14px] px-7 rounded-lg mr-4">Mark as Read</button>
+                <button className="border-2 border-gray-300 hover:border-none hover:text-white text-lg font-semibold hover:bg-[#59C6D2] py-[14px] px-7 rounded-lg">Add To Wishlist</button>
                 </div>
             </div>
         </div>
