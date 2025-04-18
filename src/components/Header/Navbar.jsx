@@ -15,6 +15,7 @@ const Navbar = () => {
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
         <NavLink to="/" className="mx-4 px-5 py-4 text-lg text-[#131313] opacity-80">Home</NavLink>
 <NavLink to="/about" className="mx-4 px-5 py-4 text-lg text-[#131313] opacity-80">About</NavLink>
+<NavLink to="/listedBook" className="mx-4 px-5 py-4 text-lg text-[#131313] opacity-80">Listed Books</NavLink>
 <NavLink to="" className="mx-4 px-5 py-4 text-lg text-[#131313] opacity-80">Page to Read</NavLink>
       </ul>
     </div>
@@ -24,6 +25,7 @@ const Navbar = () => {
     <ul className="menu menu-horizontal px-1">
     <NavLink to="/" className="mx-4 px-5 py-4 text-lg text-[#131313] opacity-80">Home</NavLink>
 <NavLink to="/about" className="mx-4 px-5 py-4 text-lg text-[#131313] opacity-80">About</NavLink>
+<NavLink to="/listedBook" className="mx-4 px-5 py-4 text-lg text-[#131313] opacity-80">Listed Books</NavLink>
 <NavLink to="" className="mx-4 px-5 py-4 text-lg text-[#131313] opacity-80">Page to Read</NavLink>
     </ul>
   </div>

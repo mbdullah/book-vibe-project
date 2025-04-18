@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
+import { setStorage } from '../../Utility/UtilityDB';
 
 const BookDetails = () => {
     const {id} = useParams();
@@ -9,6 +10,11 @@ const BookDetails = () => {
     const singleBook = allBooks.find(book => book.bookId === bookId);
 
     const {image, author, bookName, tags, rating,  category, review, publisher, yearOfPublishing, totalPages} = singleBook
+
+    const handleAddToMarkAsRead = id =>{
+        setStorage(id)
+    }
+
     return (
         <div className='lg:flex gap-12 mb-[100px] mt-[50px] mx-5'>
             <div className='bg-[#F3F3F3] p-[74px] lg:w-[50%] rounded-3xl'>
@@ -39,7 +45,7 @@ const BookDetails = () => {
                 </ul>
                 </div>
                 <div className='flex mt-8 work-sans'>
-                <button className="border-2 border-gray-300 hover:border-none hover:text-white text-lg font-semibold hover:bg-[#23BE0A] py-[14px] px-7 rounded-lg mr-4">Mark as Read</button>
+                <button onClick={()=>handleAddToMarkAsRead(id)} className="border-2 border-gray-300 hover:border-none hover:text-white text-lg font-semibold hover:bg-[#23BE0A] py-[14px] px-7 rounded-lg mr-4">Mark as Read</button>
                 <button className="border-2 border-gray-300 hover:border-none hover:text-white text-lg font-semibold hover:bg-[#59C6D2] py-[14px] px-7 rounded-lg">Add To Wishlist</button>
                 </div>
             </div>
